@@ -1,0 +1,98 @@
+.section-hero {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 94px;
+}
+
+.section-features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.title-hero {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  margin-bottom: 30px;
+  padding-top: 200px;
+}
+
+.filter-groups {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filter-groups-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  margin-bottom: 50px;
+}
+
+.section-hero .modal-button {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  min-width: 136px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+
+  color: $primary-white-color;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  transform: scale(1);
+  transition: background-color 250ms $transition-timing-function;
+}
+
+.section-hero .button:hover,
+.section-hero .button:focus {
+  background-color: $secondary-accent-color;
+  border: none;
+  transform: scale(1.1);
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
