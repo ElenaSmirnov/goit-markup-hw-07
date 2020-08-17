@@ -5,3 +5,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.footer-section {
+  background-color: $footer-background;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}

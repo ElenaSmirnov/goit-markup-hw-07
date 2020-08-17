@@ -36,6 +36,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 h1,
 h2,
 h3,
@@ -54,4 +55,8 @@ p {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.address {
+  text-decoration: none;
 }

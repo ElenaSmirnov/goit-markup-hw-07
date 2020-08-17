@@ -1,45 +1,37 @@
-.footer-section .container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.footer-section {
-  background-color: $footer-background;
-  padding-bottom: 60px;
-  padding-top: 60px;
-}
 .footer-section .logo-studio {
   color: $primary-white-color;
-}
-
-.footer-section .logo {
-  margin-bottom: 20px;
+  .logo {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-section .element {
   display: flex;
   margin-bottom: 9px;
+
+  &:nth-child(3n) {
+    margin-bottom: 0;
+  }
 }
 
-.footer-section .element:nth-child(3n) {
-  margin-bottom: 0;
-}
+.footer-contacts {
+  padding-top: 20px;
 
-.footer-contacts .address {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $primary-white-color;
-  text-decoration: none;
-}
-.footer-contacts .link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $secondary-text-color;
+  .address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primary-white-color;
+  }
+
+  .link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+  }
 }
 
 .footer-content {
@@ -65,10 +57,6 @@
 
   color: $primary-white-color;
   margin-bottom: 20px;
-}
-
-.footer-contacts {
-  padding-top: 20px;
 }
 
 .button-follow-us {
