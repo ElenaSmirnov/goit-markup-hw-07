@@ -26,16 +26,6 @@
   transition: transform 250ms $transition-timing-function;
 }
 
-.is-hidden .modal-form {
-  transform: translate(-50%, 50%);
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .modal-form-title {
   font-style: normal;
   font-weight: 700;
@@ -73,6 +63,11 @@
   box-shadow: 0 0 0 1000px $primary-white-color inset;
 
   color: $accent-color;
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
 }
 
 .modal-form-field {
@@ -95,6 +90,11 @@
   resize: none;
   transition: border 250ms $transition-timing-function;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
 }
 
 .modal-icon {
@@ -113,9 +113,6 @@
   transition: color 250ms $transition-timing-function 250ms;
 }
 
-.modal-form-input {
-  color: $primary-text-color;
-}
 .modal-form-message:focus::placeholder {
   color: $accent-color;
 }
@@ -129,20 +126,11 @@
   color: $accent-color;
 }
 
-.modal-form-input:focus
-  + .modal-form-label
-  /*.modal-form-input:not(:placeholder-shown)
-  + .modal-form-label*/ {
+.modal-form-input:focus + .modal-form-label {
   font-size: 12px;
   line-height: 1.17;
   transform: translate(-30px, -45px);
   color: $accent-color;
-}
-
-.modal-form-input:focus,
-.modal-form-message:focus {
-  outline: none;
-  border-color: $accent-color;
 }
 
 .modal-form-input:focus ~ .modal-icon {
@@ -268,17 +256,11 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
   transition: background-color 250ms $transition-timing-function;
-}
 
-.modal-form-btn:hover,
-.modal-form-btn:focus {
-  background: $secondary-accent-color;
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  &:hover,
+  &:focus {
+    background: $secondary-accent-color;
+  }
 }
 
 .modal-close-btn {
@@ -295,15 +277,15 @@
 
   cursor: pointer;
   transition: color 250ms $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background: $primary-white-color;
+    outline: none;
+  }
 }
 
 .modal-close-icon:hover {
   fill: $accent-color;
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  color: $accent-color;
-  background: $primary-white-color;
-  outline: none;
 }

@@ -60,3 +60,13 @@ p {
 .address {
   text-decoration: none;
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  .modal-form {
+    transform: translate(-50%, 50%);
+  }
+}
