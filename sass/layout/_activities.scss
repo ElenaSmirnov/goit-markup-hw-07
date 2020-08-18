@@ -1,22 +1,17 @@
 .activities-list {
   display: flex;
   align-items: center;
-}
 
-.activities-list-item {
-  position: relative;
-  margin-right: 30px;
-}
-
-.activities-list .title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  background-color: $secondary-background-color;
-  color: $primary-white-color;
+  .title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: $secondary-background-color;
+    color: $primary-white-color;
+  }
 }
 
 .activities-list-title {

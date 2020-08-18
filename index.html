@@ -554,6 +554,13 @@
 
     <div class="backdrop is-hidden" data-modal>
       <form action="#" class="modal-form">
+        <div class="modal-close-form-btn">
+          <button data-modal-close type="button" class="modal-close-btn">
+            <svg class="modal-close-icon" width="18px" height="18px">
+              <use href="./images/sprite.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+        </div>
         <h2 class="modal-form-title">
           Оставьте свои данные, мы вам перезвоним
         </h2>
@@ -619,6 +626,7 @@
             name="policy"
             value="accept-policy"
             class="modal-form-checkbox"
+            required
           />
           <span class="modal-form-custom-checkbox">
             <svg class="icon-check-modal" width="18px" height="18px">
@@ -635,11 +643,6 @@
         </label>
         <button type="submit" class="modal-form-btn">Отправить</button>
       </form>
-      <button data-modal-close type="button" class="modal-close-btn">
-        <svg class="modal-close-icon" width="18px" height="18px">
-          <use href="./images/sprite.svg#icon-close-modal"></use>
-        </svg>
-      </button>
     </div>
 
     <script src="./javascript/modal.js"></script>

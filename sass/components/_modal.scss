@@ -43,6 +43,12 @@
   margin-bottom: 28px;
 }
 
+.modal-close-form-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
 .modal-form-input {
   display: block;
   height: 40px;
@@ -62,12 +68,27 @@
 
   box-shadow: 0 0 0 1000px $primary-white-color inset;
 
-  color: $accent-color;
+  color: $primary-text-color;
 
   &:focus {
     outline: none;
     border-color: $accent-color;
   }
+  &::placeholder {
+    color: $title-text-color;
+    transition: color 250ms $transition-timing-function 250ms;
+  }
+}
+
+.modal-form-input:focus + .modal-form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  transform: translate(-30px, -45px);
+  color: $accent-color;
+}
+
+.modal-form-input:focus ~ .modal-icon {
+  fill: $accent-color;
 }
 
 .modal-form-field {
@@ -108,11 +129,6 @@
   transition: fill 250ms $transition-timing-function;
 }
 
-.modal-form-input::placeholder {
-  color: transparent;
-  transition: color 250ms $transition-timing-function 250ms;
-}
-
 .modal-form-message:focus::placeholder {
   color: $accent-color;
 }
@@ -124,17 +140,6 @@
   transform: translate(-26px, -40px);
 
   color: $accent-color;
-}
-
-.modal-form-input:focus + .modal-form-label {
-  font-size: 12px;
-  line-height: 1.17;
-  transform: translate(-30px, -45px);
-  color: $accent-color;
-}
-
-.modal-form-input:focus ~ .modal-icon {
-  fill: $accent-color;
 }
 
 .modal-form-label {
@@ -264,10 +269,6 @@
 }
 
 .modal-close-btn {
-  position: absolute;
-  top: 100px;
-  right: 508px;
-
   width: 32px;
   height: 32px;
   border: none;
