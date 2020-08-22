@@ -24,7 +24,8 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     transform: scale(1);
-    transition: background-color 250ms $transition-timing-function;
+    transition: background-color 250ms $transition-timing-function,
+      transform 250ms $transition-timing-function;
 
     &:hover,
     &:focus {

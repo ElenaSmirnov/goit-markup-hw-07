@@ -87,6 +87,10 @@
   color: $accent-color;
 }
 
+.modal-form-input:not(:placeholder-shown) + .modal-form-label {
+  transform: translate(-30px, -45px);
+}
+
 .modal-form-input:focus ~ .modal-icon {
   fill: $accent-color;
 }
@@ -140,6 +144,10 @@
   transform: translate(-26px, -40px);
 
   color: $accent-color;
+}
+
+.modal-form-message:not(:placeholder-shown) + .modal-message-label {
+  transform: translate(-26px, -40px);
 }
 
 .modal-form-label {

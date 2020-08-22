@@ -1,0 +1,33 @@
+.site-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    list-style: none;
+    transition: color 250ms $transition-timing-function;
+    padding-bottom: 40px;
+  }
+  .active-list-item {
+    color: $accent-color;
+  }
+}
+
+.site-nav-list-item-link {
+  position: relative;
+  /* padding-top: 32px;
+  padding-bottom: 32px;*/
+  transition: color 250ms $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.site-nav-list-item:not(:last-child) {
+  /* margin-bottom: 40px;*/
+}

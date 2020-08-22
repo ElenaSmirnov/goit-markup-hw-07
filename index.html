@@ -23,12 +23,20 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="container">
-        <nav class="site-nav">
+      <div class="container header-container">
+        
           <a class="logo" lang="en" href="./index.html">
             <span class="logo-web">Web</span
             ><span class="logo-studio"> Studio</span>
           </a>
+          <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu">
+            <svg width="40px" height="40px">
+              <use class="item-burger" href="./images/sprite.svg#icon-burger"></use>
+              <use class="item-close" href="./images/sprite.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <div class="menu">
+          <nav class="site-nav">
           <ul class="site-nav-list list">
             <li class="site-nav-list-item">
               <a
@@ -46,7 +54,9 @@
               <a href="" class="site-nav-list-item-link link">Контакты</a>
             </li>
           </ul>
+          
         </nav>
+        
         <div class="contacts">
           <ul class="contacts-list list">
             <li class="contacts-list-item">
@@ -71,10 +81,11 @@
           </ul>
         </div>
       </div>
+      </div>
     </header>
     <main>
       <!-- HERO секция-->
-      <section class="section-hero overlay">
+     <!-- <section class="section-hero overlay">
         <h1 class="title-hero">
           Эффективные решения <br />
           для вашего бизнеса
@@ -82,8 +93,8 @@
         <button class="modal-button" type="submit" data-modal-open>
           Заказать услугу
         </button>
-      </section>
-      <!-- Наши особенности-->
+      </section>-->
+      <!-- Наши особенности--><!--
       <section class="section section-features container">
         <h2 class="section-title visually-hidden">Наши особенности</h2>
         <ul class="features-list list">
@@ -137,9 +148,9 @@
             </p>
           </li>
         </ul>
-      </section>
+      </section>-->
       <!-- Чем мы занимаемся-->
-      <section class="section">
+     <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="activities-list list">
@@ -173,9 +184,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
       <!--Наша команда-->
-      <section class="section team">
+    <!-- <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
@@ -405,9 +416,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>--> 
       <!--Постоянные клиенты-->
-      <section class="section clients-section">
+    <!--  <section class="section clients-section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients list">
@@ -614,7 +625,7 @@
             name="user-message"
             id="user-message"
             class="modal-form-message"
-            placeholder=""
+            placeholder=" "
           ></textarea>
           <label class="modal-message-label" for="user-message">
             Комментарий
@@ -643,7 +654,7 @@
         </label>
         <button type="submit" class="modal-form-btn">Отправить</button>
       </form>
-    </div>
+    </div>-->
 
     <script src="./javascript/modal.js"></script>
   </body>
